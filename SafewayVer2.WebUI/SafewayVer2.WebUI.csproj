@@ -170,6 +170,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductManagerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -235,6 +236,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\ProductManager\Index.cshtml" />
+    <Content Include="Views\ProductManager\Create.cshtml" />
+    <Content Include="Views\ProductManager\Edit.cshtml" />
+    <Content Include="Views\ProductManager\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -251,6 +256,27 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SafewayVer2.Core\SafewayVer2.Core.csproj">
+      <Project>{355c23ab-9beb-40ca-9b80-d7b04250a82c}</Project>
+      <Name>SafewayVer2.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SafewayVer2.DataAccess.InMemory\SafewayVer2.DataAccess.InMemory.csproj">
+      <Project>{33239921-a490-414b-bbd1-4010a2bd8119}</Project>
+      <Name>SafewayVer2.DataAccess.InMemory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SafewayVer2.DataAccess.SQL\SafewayVer2.DataAccess.SQL.csproj">
+      <Project>{c6505325-50d2-4abf-af1b-0cceb6ec52fb}</Project>
+      <Name>SafewayVer2.DataAccess.SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SafewayVer2.Services\SafewayVer2.Services.csproj">
+      <Project>{b32ca310-f166-4447-9709-23e2928a46c1}</Project>
+      <Name>SafewayVer2.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

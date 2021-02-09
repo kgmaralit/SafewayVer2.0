@@ -8,7 +8,7 @@ using SafewayVer2.Core.Models;
 
 namespace SafewayVer2.DataAccess.InMemory
 {
-    class ProductRepository
+    public class ProductRepository
     {
         ObjectCache cache = MemoryCache.Default;
         List<Product> products;
